@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
+  <body>
+    <nav id="desktop-nav" class = "desktop-nav">
+      <div class="logo">Rahul Prasad</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Rahul Prasad</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile" class="section">
+      <div class="section__pic-container">
+        <img src="assets/rahul_profile.png" alt="Rahul profile picture"/>
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Rahul Prasad</h1>
+        <p class="section__text__p2">Analytics and Cognitive Analyst</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2" onclick="window.open('assets/Rahul_Prasad_Resume.pdf')">Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/rahul-prasad-537760195/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/rahulprasad2823'"
+          />
+        </div>
+      </div>
+    </section>
+    </section>
+
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+        <div class="about-details-container">
+          <div class="about-container">
+            <p>Dedicated Analytics and Cognitive Analyst with a background at Deloitte, adept at data 
+              analysis, AI prompt development, and collaborating with diverse teams. 
+              Skilled in managing projects, enhancing AI models, and crafting actionable insights. Currently 
+              pursuing a master’s in computer science and engineering in the USA. Proficient in Python, JavaScript, 
+              and data visualization. Demonstrates a passion for creativity, precision, and pushing the boundaries of 
+              innovation in data science and engineering.</p>
+            </div>
+          </div>
+    </section>
+    <section id="experience">
+      <section class="experience-section">
+        <img
+        src="./assets/experience.png"
+        alt="Experience icon"
+        class="icon"/>
+      <h1>Experience</h1>
+      <div class="experience-container">
+          <div class="experience-card">
+              <h2>2022 - 2023</h2>
+              <img
+              src="assets/deloitte-logo.png"
+              alt="Experience icon"
+              srcset="" width="200"
+            />
+              <h3>Analytics and Cognitive Analyst</h3>
+              <h4>Deloitte Touche Tohmatsu India, LLP</h4>
+              <p>Bangalore, India</p>
+              <ul>
+                  <li>Collaborated with cross-functional teams and clients to understand their analytical needs, providing tailored solutions and actionable recommendations.</li>
+                  <li>Managed and executed multiple projects simultaneously, adhering to timelines and quality standards, ensuring client satisfaction.</li>
+                  <li>Led a key project as a prompt writer, developing and refining prompts for AI and machine learning models to enhance performance and accuracy.</li>
+                  <li>Collected and analyzed data on individuals who attended Big Data training and certifications, contributing to the improvement of training programs and the firm's Big Data capabilities.</li>
+              </ul>
+          </div>
+          <div class="experience-card">
+              <h2>2022 - 2022</h2>
+
+              <img
+              src="assets/deloitte-logo.png"
+              alt="Experience icon"
+              srcset="" width="200"
+            />
+            
+              <h3>Analytics and Cognitive Analyst Intern</h3>
+              <h4>Deloitte Touche Tohmatsu India, LLP</h4>
+              <p>Bangalore, India</p>
+              <ul>
+                  <li>Technical Skills Gained: Trained in Azure, Data Factory, Python, PyCharm, and SQL.</li>
+                  <li>Hands-on Experience: Applied training to live projects, particularly with Azure, gaining practical experience in cloud-based data solutions.</li>
+                  <li>Tools Used: Worked extensively with Azure Data Factory for data integration and automation and utilized Python for scripting and data analysis.</li>
+              </ul>
+          </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <section class="skills-section">
+        <p class="section__text__p1">Explore My</p>
+        <h2>Skills</h2>
+        <div class="skills-container">
+          <div class="skills-box">
+            <h3><img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="Python Logo"> Languages</h3>
+            <p>Python, R, C, C++</p>
+          </div>
+          <div class="skills-box">
+              <h3><img src="https://cdn-icons-png.flaticon.com/512/949/949455.png" alt="ML Logo"> Machine Learning</h3>
+              <p>Regression, Classification, Clustering, Pandas, NumPy, Scikit-learn, Jupyter, PyTest, Deep Learning, NLP, Keras, PyTorch</p>
+          </div>
+          <div class="skills-box">
+              <h3><img src="https://cdn-icons-png.flaticon.com/512/919/919853.png" alt="Docker Logo"> Deployment and Production</h3>
+              <p>Docker, Kubernetes, Flask, FastAPI, Azure</p>
+          </div>
+          <div class="skills-box">
+              <h3><img src="https://cdn-icons-png.flaticon.com/512/29/29043.png" alt="Database Logo"> Database</h3>
+              <p>MongoDB, MySQL</p>
+          </div>
+          <div class="skills-box">
+              <h3><img src="https://cdn-icons-png.flaticon.com/512/564/564445.png" alt="Visualization Logo"> Visualization</h3>
+              <p>Tableau, Power BI, Matplotlib</p>
+          </div>
+          <div class="skills-box">
+              <h3><img src="https://cdn-icons-png.flaticon.com/512/518/518713.png" alt="Platform Logo"> Platforms</h3>
+              <p>Linux, Ubuntu, Windows</p>
+          </div>
+          <div class="skills-box">
+              <h3><img src="https://cdn-icons-png.flaticon.com/512/919/919827.png" alt="Web Logo"> Web Technologies</h3>
+              <p>HTML5, CSS3, JavaScript, ReactJS</p>
+          </div>
+          <div class="skills-box">
+              <h3><img src="https://cdn-icons-png.flaticon.com/512/3552/3552603.png" alt="Soft Skills Logo"> Soft Skills</h3>
+              <p>Project management, Collaboration, Problem-solving, Critical thinking, Creative thinking</p>
+          </div>
+      </div>
+    </section>
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="assets/project1.jpg"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h3>Analyzing Pedestrian and Bicycle Activity Patterns in Downtown Los Angeles Using Python</h3>
+            <ul>
+                <li>Analyzed mobility patterns in Los Angeles, highlighting gender-specific trends and safety practices.</li>
+                <li>Identified high-activity areas needing infrastructure upgrades for safer, sustainable transportation.</li>
+            </ul>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="assets/project2.jpg"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h3>Sentiments from Space: Insights from Space Experience Reviews with NLP</h3>
+            <ul>
+                <li>Data cleaning and preprocessing.</li>
+                <li>Sentiment analysis (27.68% positive, 11.81% negative) using VADER.</li>
+                <li>Identification of key terms and topics through TF-IDF and LDA modeling.</li>
+            </ul>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href= 'https://github.com/rahulprasad2823/CHATBOT'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="assets/project3.jpg"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h3>Prompt Writer at Deloitte for Amazon.com Services LLC</h3>
+            <ul>
+              <li>Contributed to the enhancement of AI model performance through effective prompt creation.</li>
+              <li>Successfully balanced creativity with technical precision to meet project goals.</li>
+          </ul>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/rahulprasad2823/Car-Comparison-dashboard'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    </section>
+    <section id = "eduction" class="education-section">
+      <img
+      src="./assets/education.png"
+      alt="Education icon"
+      class="icon"
+    />
+      <h1>Education</h1>
+      <div class="education-container">
+          <div class="education-card">
+              <h2>2024 - Present</h2>
+              <img
+              src="./assets/Sacred_Heart_University_Logo_Jan2023-removebg-preview.png"
+              alt="scared heart logo"
+            />
+              <h3>Master of Science in Computer and Information Sciences</h3>
+              <h4>Sacred Heart University</h4>
+              <p>Connecticut, USA</p>
+          </div>
+          <div class="education-card">
+              <h2>2018 - 2022</h2>
+              <img
+              src="./assets/Lovely_Professional_University_logo.png"
+              alt="lovely logo"
+              srcset="" width="170"
+            />
+              <h3>Bachelor of Technology in Computer Science and Engineering</h3>
+              <h4>Lovely Professional University</h4>
+              <p>Punjab, India</p>
+          </div>
+      </div>
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">rahulprasad2823@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/rahul-prasad-537760195/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+      <div class="floating-nav">
+        <button title="Home" onclick="navigateTo('desktop-nav')">
+          <img src="https://cdn-icons-png.flaticon.com/512/1946/1946436.png" alt="Home Icon">
+        </button>
+        <button title="Experience" onclick="navigateTo('experience')">
+          <img src="./assets/experience.png" alt="Experience Icon">
+        </button>
+        <button title="Projects" onclick="navigateTo('projects')">
+          <img src="./assets/project_icon.png" alt="Projects Icon">
+        </button>
+        <button title="Contact" onclick="navigateTo('contact')">
+          <img src="./assets/contact_png.png" alt="Contact Icon">
+        </button>
+      </div>
+      <footer>
+        <nav>
+          <div class="nav-links-container">
+            <ul class="nav-links">
+              <li><a href="#about">About</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+      </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
